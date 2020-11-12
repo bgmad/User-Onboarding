@@ -76,19 +76,19 @@ function App() {
       <form onSubmit={submit}>
         <label>
           Name: 
-          <input onChange={changeHandle} value={form.name} name='name' type='text'/>
+          <input className='name-input' onChange={changeHandle} value={form.name} name='name' type='text'/>
         </label>
         <label>
           Email: 
-          <input onChange={changeHandle} value={form.email} name='email' type='email'/>
+          <input className='email-input' onChange={changeHandle} value={form.email} name='email' type='email'/>
         </label>
         <label>
           Password: 
-          <input onChange={changeHandle} value={form.password} name='password' type='password'/>
+          <input className='password-input' onChange={changeHandle} value={form.password} name='password' type='password'/>
         </label>
         <label>
           Terms of services: 
-          <input onChange={changeHandle} checked={form.tos} name='tos' type='checkbox'/>
+          <input className='tos-input' onChange={changeHandle} checked={form.tos} name='tos' type='checkbox'/>
         </label>
         <label>
           <button disabled={disabled}>Submit</button>
